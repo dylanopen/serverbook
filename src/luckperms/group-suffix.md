@@ -1,8 +1,8 @@
-# User suffixes
+# Group suffixes
 
-LuckPerms allows you to manage suffixes and suffixes for groups. You can also
+LuckPerms allows you to manage prefixes and suffixes for groups. You can also
 set suffixes for specific players - see this page for more info:
-[group suffixes and suffixes](./group-suffix.md).
+[player suffixes](./player-suffix.md).
 
 > Note: you will need a plugin such as
   [TAB](https://modrinth.com/plugin/tab-was-taken)
@@ -17,7 +17,7 @@ set suffixes for specific players - see this page for more info:
 ## Setting a suffix for a group
 
 ``` text
-/lp group <player> meta setsuffix <weight> <suffix>
+/lp group <group> meta setsuffix <weight> <suffix>
 ```
 
 For example, to give the group `Moderator` the `[Mod]` suffix with a
@@ -30,12 +30,12 @@ weight of 40, you would use:
 The space after `[Mod]` is important here, as otherwise there would be no
 gap between the suffix and the main name.
 
-## Removing a suffix from a player
+## Removing a suffix from a group
 
 To remove a suffix, you remove the suffixes at a specific weight:
 
 ``` text
-/lp group <player> meta removesuffix <weight>
+/lp group <group> meta removesuffix <weight>
 ```
 
 For example, to remove suffixes from `Moderator` with a weight (priority) of
@@ -51,11 +51,11 @@ Just like how you can temporarily add a group to a group, you can also set a
 temporary suffix:
 
 ``` text
-/lp group <player> meta settempsuffix <weight> <suffix> <duration>
+/lp group <group> meta settempsuffix <weight> <suffix> <duration>
 ```
 
 For example, to temporarily set the ` [Moderator]` suffix for the `Moderator`
-player at priority 60 for 3 days:
+group at priority 60 for 3 days:
 
 ``` text
 /lp group Moderator meta settempsuffix 60 " [Moderator]" 3d

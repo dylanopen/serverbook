@@ -166,10 +166,10 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="user-suffixes"><a class="header" href="#user-suffixes">User suffixes</a></h1>
-<p>LuckPerms allows you to manage suffixes and suffixes for groups. You can also
+                        <h1 id="group-suffixes"><a class="header" href="#group-suffixes">Group suffixes</a></h1>
+<p>LuckPerms allows you to manage prefixes and suffixes for groups. You can also
 set suffixes for specific players - see this page for more info:
-<a href="./group-suffix.html">group suffixes and suffixes</a>.</p>
+<a href="./player-suffix.html">player suffixes</a>.</p>
 <blockquote>
 <p>Note: you will need a plugin such as
 <a href="https://modrinth.com/plugin/tab-was-taken">TAB</a>
@@ -182,7 +182,7 @@ have multiple suffixes and suffixes, and LuckPerms will use whatever suffix
 and suffix has the highest weight!</li>
 </ul>
 <h2 id="setting-a-suffix-for-a-group"><a class="header" href="#setting-a-suffix-for-a-group">Setting a suffix for a group</a></h2>
-<pre><code class="language-text">/lp group &lt;player&gt; meta setsuffix &lt;weight&gt; &lt;suffix&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta setsuffix &lt;weight&gt; &lt;suffix&gt;
 </code></pre>
 <p>For example, to give the group <code>Moderator</code> the <code>[Mod]</code> suffix with a
 weight of 40, you would use:</p>
@@ -190,9 +190,9 @@ weight of 40, you would use:</p>
 </code></pre>
 <p>The space after <code>[Mod]</code> is important here, as otherwise there would be no
 gap between the suffix and the main name.</p>
-<h2 id="removing-a-suffix-from-a-player"><a class="header" href="#removing-a-suffix-from-a-player">Removing a suffix from a player</a></h2>
+<h2 id="removing-a-suffix-from-a-group"><a class="header" href="#removing-a-suffix-from-a-group">Removing a suffix from a group</a></h2>
 <p>To remove a suffix, you remove the suffixes at a specific weight:</p>
-<pre><code class="language-text">/lp group &lt;player&gt; meta removesuffix &lt;weight&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta removesuffix &lt;weight&gt;
 </code></pre>
 <p>For example, to remove suffixes from <code>Moderator</code> with a weight (priority) of
 <code>40</code>:</p>
@@ -201,10 +201,10 @@ gap between the suffix and the main name.</p>
 <h2 id="setting-a-suffix-temporarily"><a class="header" href="#setting-a-suffix-temporarily">Setting a suffix temporarily</a></h2>
 <p>Just like how you can temporarily add a group to a group, you can also set a
 temporary suffix:</p>
-<pre><code class="language-text">/lp group &lt;player&gt; meta settempsuffix &lt;weight&gt; &lt;suffix&gt; &lt;duration&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta settempsuffix &lt;weight&gt; &lt;suffix&gt; &lt;duration&gt;
 </code></pre>
 <p>For example, to temporarily set the <code> [Moderator]</code> suffix for the <code>Moderator</code>
-player at priority 60 for 3 days:</p>
+group at priority 60 for 3 days:</p>
 <pre><code class="language-text">/lp group Moderator meta settempsuffix 60 " [Moderator]" 3d
 </code></pre>
 

@@ -639,10 +639,10 @@ temporary suffix:</p>
 player at priority 60 for 3 days:</p>
 <pre><code class="language-text">/lp user Minecraft123 meta settempsuffix 60 "[Helper] " 3d
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="user-prefixes-1"><a class="header" href="#user-prefixes-1">User prefixes</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="group-prefixes"><a class="header" href="#group-prefixes">Group prefixes</a></h1>
 <p>LuckPerms allows you to manage prefixes and suffixes for groups. You can also
 set prefixes for specific players - see this page for more info:
-<a href="luckperms/./group-prefix.html">group prefixes and suffixes</a>.</p>
+<a href="luckperms/./player-prefix.html">player prefixes</a>.</p>
 <blockquote>
 <p>Note: you will need a plugin such as
 <a href="https://modrinth.com/plugin/tab-was-taken">TAB</a>
@@ -650,12 +650,12 @@ in order to display prefixes in chat and tablist.</p>
 </blockquote>
 <h2 id="prefix-priority-1"><a class="header" href="#prefix-priority-1">Prefix priority</a></h2>
 <ul>
-<li>Each prefix and suffix has a <em>weight</em>, or <em>priority</em> - players and groups can
+<li>Each prefix and suffix has a <em>weight</em>, or <em>priority</em> - groups and groups can
 have multiple prefixes and suffixes, and LuckPerms will use whatever prefix
 and suffix has the highest weight!</li>
 </ul>
 <h2 id="setting-a-prefix-for-a-group"><a class="header" href="#setting-a-prefix-for-a-group">Setting a prefix for a group</a></h2>
-<pre><code class="language-text">/lp group &lt;player&gt; meta setprefix &lt;weight&gt; &lt;prefix&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta setprefix &lt;weight&gt; &lt;prefix&gt;
 </code></pre>
 <p>For example, to give the group <code>Moderator</code> the <code>[Mod]</code> prefix with a
 weight of 40, you would use:</p>
@@ -663,9 +663,9 @@ weight of 40, you would use:</p>
 </code></pre>
 <p>The space after <code>[Mod]</code> is important here, as otherwise there would be no
 gap between the prefix and the main name.</p>
-<h2 id="removing-a-prefix-from-a-player-1"><a class="header" href="#removing-a-prefix-from-a-player-1">Removing a prefix from a player</a></h2>
+<h2 id="removing-a-prefix-from-a-group"><a class="header" href="#removing-a-prefix-from-a-group">Removing a prefix from a group</a></h2>
 <p>To remove a prefix, you remove the prefixes at a specific weight:</p>
-<pre><code class="language-text">/lp group &lt;player&gt; meta removeprefix &lt;weight&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta removeprefix &lt;weight&gt;
 </code></pre>
 <p>For example, to remove prefixes from <code>Moderator</code> with a weight (priority) of
 <code>40</code>:</p>
@@ -674,16 +674,16 @@ gap between the prefix and the main name.</p>
 <h2 id="setting-a-prefix-temporarily-1"><a class="header" href="#setting-a-prefix-temporarily-1">Setting a prefix temporarily</a></h2>
 <p>Just like how you can temporarily add a group to a group, you can also set a
 temporary prefix:</p>
-<pre><code class="language-text">/lp group &lt;player&gt; meta settempprefix &lt;weight&gt; &lt;prefix&gt; &lt;duration&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta settempprefix &lt;weight&gt; &lt;prefix&gt; &lt;duration&gt;
 </code></pre>
 <p>For example, to temporarily set the <code>[Moderator] </code> prefix for the <code>Moderator</code>
-player at priority 60 for 3 days:</p>
+group at priority 60 for 3 days:</p>
 <pre><code class="language-text">/lp group Moderator meta settempprefix 60 "[Moderator] " 3d
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="user-suffixes-1"><a class="header" href="#user-suffixes-1">User suffixes</a></h1>
-<p>LuckPerms allows you to manage suffixes and suffixes for groups. You can also
+<div style="break-before: page; page-break-before: always;"></div><h1 id="group-suffixes"><a class="header" href="#group-suffixes">Group suffixes</a></h1>
+<p>LuckPerms allows you to manage prefixes and suffixes for groups. You can also
 set suffixes for specific players - see this page for more info:
-<a href="luckperms/./group-suffix.html">group suffixes and suffixes</a>.</p>
+<a href="luckperms/./player-suffix.html">player suffixes</a>.</p>
 <blockquote>
 <p>Note: you will need a plugin such as
 <a href="https://modrinth.com/plugin/tab-was-taken">TAB</a>
@@ -696,7 +696,7 @@ have multiple suffixes and suffixes, and LuckPerms will use whatever suffix
 and suffix has the highest weight!</li>
 </ul>
 <h2 id="setting-a-suffix-for-a-group"><a class="header" href="#setting-a-suffix-for-a-group">Setting a suffix for a group</a></h2>
-<pre><code class="language-text">/lp group &lt;player&gt; meta setsuffix &lt;weight&gt; &lt;suffix&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta setsuffix &lt;weight&gt; &lt;suffix&gt;
 </code></pre>
 <p>For example, to give the group <code>Moderator</code> the <code>[Mod]</code> suffix with a
 weight of 40, you would use:</p>
@@ -704,9 +704,9 @@ weight of 40, you would use:</p>
 </code></pre>
 <p>The space after <code>[Mod]</code> is important here, as otherwise there would be no
 gap between the suffix and the main name.</p>
-<h2 id="removing-a-suffix-from-a-player-1"><a class="header" href="#removing-a-suffix-from-a-player-1">Removing a suffix from a player</a></h2>
+<h2 id="removing-a-suffix-from-a-group"><a class="header" href="#removing-a-suffix-from-a-group">Removing a suffix from a group</a></h2>
 <p>To remove a suffix, you remove the suffixes at a specific weight:</p>
-<pre><code class="language-text">/lp group &lt;player&gt; meta removesuffix &lt;weight&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta removesuffix &lt;weight&gt;
 </code></pre>
 <p>For example, to remove suffixes from <code>Moderator</code> with a weight (priority) of
 <code>40</code>:</p>
@@ -715,10 +715,10 @@ gap between the suffix and the main name.</p>
 <h2 id="setting-a-suffix-temporarily-1"><a class="header" href="#setting-a-suffix-temporarily-1">Setting a suffix temporarily</a></h2>
 <p>Just like how you can temporarily add a group to a group, you can also set a
 temporary suffix:</p>
-<pre><code class="language-text">/lp group &lt;player&gt; meta settempsuffix &lt;weight&gt; &lt;suffix&gt; &lt;duration&gt;
+<pre><code class="language-text">/lp group &lt;group&gt; meta settempsuffix &lt;weight&gt; &lt;suffix&gt; &lt;duration&gt;
 </code></pre>
 <p>For example, to temporarily set the <code> [Moderator]</code> suffix for the <code>Moderator</code>
-player at priority 60 for 3 days:</p>
+group at priority 60 for 3 days:</p>
 <pre><code class="language-text">/lp group Moderator meta settempsuffix 60 " [Moderator]" 3d
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="good-starting-permissions-1"><a class="header" href="#good-starting-permissions-1">Good starting permissions</a></h1>
