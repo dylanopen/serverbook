@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Pregenerating a world - Minecraft Server Admin Guide</title>
+        <title>Center command - Minecraft Server Admin Guide</title>
 
 
         <!-- Custom HTML head -->
@@ -166,43 +166,24 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="pregenerating-a-world"><a class="header" href="#pregenerating-a-world">Pregenerating a world</a></h1>
-<blockquote>
-<p>You must set a (fairly) small worldborder before generating the world. By
-following the steps in this page, Chunky will begin to pregenerate the world
-inside the border.</p>
-</blockquote>
-<h2 id="pregenerating-the-overworld"><a class="header" href="#pregenerating-the-overworld">Pregenerating the overworld</a></h2>
-<p>If you want to pregenerate the overworld dimension, run these commands while
-standing in the overworld:</p>
-<pre><code>/chunky world world
-/chunky worldborder
-/chunky start
+                        <h1 id="center-command"><a class="header" href="#center-command">Center command</a></h1>
+<p>The <code>chunky center</code> command allows you to determine where Chunky should start
+pregenerating from. It will then continue outwards from the center by the number
+of blocks specified with <a href="./radius.html"><code>chunky radius</code></a>;</p>
+<h2 id="command-usage"><a class="header" href="#command-usage">Command usage</a></h2>
+<pre><code>/chunky world &lt;x&gt; &lt;y&gt;
 </code></pre>
-<h2 id="pregenerating-the-nether"><a class="header" href="#pregenerating-the-nether">Pregenerating the nether</a></h2>
-<p>If you want to pregenerate the nether dimension, run these commands while
-standing in the nether:</p>
-<pre><code>/chunky world world_nether
-/chunky worldborder
-/chunky start
-</code></pre>
-<h2 id="pregenerating-the-end"><a class="header" href="#pregenerating-the-end">Pregenerating the end</a></h2>
-<p>If you want to pregenerate the end dimension, run these commands while you
-are standing in the end:</p>
-<pre><code>/chunky world world_the_end
-/chunky worldborder
-/chunky start
-</code></pre>
+<h2 id="center-at-00"><a class="header" href="#center-at-00">Center at 0,0</a></h2>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chunky/installation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chunky/worldborder.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chunky/progress.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chunky/radius.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -212,11 +193,11 @@ are standing in the end:</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chunky/installation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chunky/worldborder.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chunky/progress.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chunky/radius.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

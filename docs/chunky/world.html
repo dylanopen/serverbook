@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Progress command - Minecraft Server Admin Guide</title>
+        <title>World command - Minecraft Server Admin Guide</title>
 
 
         <!-- Custom HTML head -->
@@ -166,22 +166,43 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="checking-chunkys-progress"><a class="header" href="#checking-chunkys-progress">Checking Chunky's progress</a></h1>
-<p>You can use the <code>chunky progress</code> command to check what percentage of the world
-chunky has pregenerated so far.</p>
+                        <h1 id="world-command"><a class="header" href="#world-command">World command</a></h1>
+<p>The <code>chunky world</code> command allows you to set the world Chunky should pregenerate
+in (for vanilla servers, this is the dimension).</p>
 <h2 id="command-usage"><a class="header" href="#command-usage">Command usage</a></h2>
-<pre><code>/chunky progress
+<pre><code>/chunky world &lt;world&gt;
+</code></pre>
+<h2 id="list-of-worlds"><a class="header" href="#list-of-worlds">List of worlds</a></h2>
+<p>On Paper servers, you will usually have 3 worlds by default:</p>
+<ul>
+<li><code>world</code> - the overworld dimension</li>
+<li><code>world_nether</code> - the nether dimension</li>
+<li><code>world_the_end</code> - the end dimension</li>
+</ul>
+<blockquote>
+<p>You may have more worlds than this, especially if you use custom plugins which
+add worlds or dimensions.</p>
+</blockquote>
+<h2 id="example-usages"><a class="header" href="#example-usages">Example usages</a></h2>
+<p>Tell Chunky to pregenerate chunks in the <strong>overworld</strong>:</p>
+<pre><code>/chunky world world
+</code></pre>
+<p>Tell Chunky to pregenerate chunks in the <strong>nether</strong>:</p>
+<pre><code>/chunky world world_nether
+</code></pre>
+<p>Tell Chunky to pregenerate chunks in the <strong>end</strong>:</p>
+<pre><code>/chunky world world_the_end
 </code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chunky/start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chunky/simple-pregeneration.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chunky/cancel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chunky/worldborder.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -191,11 +212,11 @@ chunky has pregenerated so far.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chunky/start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chunky/simple-pregeneration.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chunky/cancel.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chunky/worldborder.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

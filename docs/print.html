@@ -1867,10 +1867,71 @@ are standing in the end:</p>
 /chunky worldborder
 /chunky start
 </code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="world-command"><a class="header" href="#world-command">World command</a></h1>
+<p>The <code>chunky world</code> command allows you to set the world Chunky should pregenerate
+in (for vanilla servers, this is the dimension).</p>
+<h2 id="command-usage-8"><a class="header" href="#command-usage-8">Command usage</a></h2>
+<pre><code>/chunky world &lt;world&gt;
+</code></pre>
+<h2 id="list-of-worlds"><a class="header" href="#list-of-worlds">List of worlds</a></h2>
+<p>On Paper servers, you will usually have 3 worlds by default:</p>
+<ul>
+<li><code>world</code> - the overworld dimension</li>
+<li><code>world_nether</code> - the nether dimension</li>
+<li><code>world_the_end</code> - the end dimension</li>
+</ul>
+<blockquote>
+<p>You may have more worlds than this, especially if you use custom plugins which
+add worlds or dimensions.</p>
+</blockquote>
+<h2 id="example-usages"><a class="header" href="#example-usages">Example usages</a></h2>
+<p>Tell Chunky to pregenerate chunks in the <strong>overworld</strong>:</p>
+<pre><code>/chunky world world
+</code></pre>
+<p>Tell Chunky to pregenerate chunks in the <strong>nether</strong>:</p>
+<pre><code>/chunky world world_nether
+</code></pre>
+<p>Tell Chunky to pregenerate chunks in the <strong>end</strong>:</p>
+<pre><code>/chunky world world_the_end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="worldborder-command"><a class="header" href="#worldborder-command">Worldborder command</a></h1>
+<p>The <code>chunky worldborder</code> command tells Chunky to pregenerate every chunk within
+the world border. The world is set using the <a href="chunky/./world.html"><code>chunky world</code></a>
+command.</p>
+<h2 id="what-does-it-do"><a class="header" href="#what-does-it-do">What does it do?</a></h2>
+<p>Under the hood, the <code>chunky worldborder</code> command does two things:</p>
+<ul>
+<li>Sets the centre to <code>0,0</code> (you can manually set the centre with the <a href="chunky/./center.html">chunky
+center</a> command).</li>
+<li>Sets the radius to the same radius as the worldborder.</li>
+</ul>
+<h2 id="command-usage-9"><a class="header" href="#command-usage-9">Command usage</a></h2>
+<pre><code>/chunky worldborder
+</code></pre>
+<p>The command doesn't take any arguments.</p>
+<h2 id="changing-the-vanilla-world-border"><a class="header" href="#changing-the-vanilla-world-border">Changing the vanilla world border</a></h2>
+<p>To set the diameter of the vanilla world border, you use the <code>/worldborder</code>
+command:</p>
+<pre><code>/worldborder set &lt;diameter&gt;
+</code></pre>
+<p>For example, for a world border of diameter <code>20,000</code>, use:</p>
+<pre><code>/worldborder set 20000
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="center-command"><a class="header" href="#center-command">Center command</a></h1>
+<p>The <code>chunky center</code> command allows you to determine where Chunky should start
+pregenerating from. It will then continue outwards from the center by the number
+of blocks specified with <a href="chunky/./radius.html"><code>chunky radius</code></a>;</p>
+<h2 id="command-usage-10"><a class="header" href="#command-usage-10">Command usage</a></h2>
+<pre><code>/chunky world &lt;x&gt; &lt;y&gt;
+</code></pre>
+<h2 id="center-at-00"><a class="header" href="#center-at-00">Center at 0,0</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="radius-command"><a class="header" href="#radius-command">Radius command</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="spawn-command"><a class="header" href="#spawn-command">Spawn command</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="start-command"><a class="header" href="#start-command">Start command</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="checking-chunkys-progress"><a class="header" href="#checking-chunkys-progress">Checking Chunky's progress</a></h1>
 <p>You can use the <code>chunky progress</code> command to check what percentage of the world
 chunky has pregenerated so far.</p>
-<h2 id="command-usage-8"><a class="header" href="#command-usage-8">Command usage</a></h2>
+<h2 id="command-usage-11"><a class="header" href="#command-usage-11">Command usage</a></h2>
 <pre><code>/chunky progress
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cancel-command"><a class="header" href="#cancel-command">Cancel command</a></h1>
@@ -1880,7 +1941,7 @@ chunky has pregenerated so far.</p>
 to temporarily pause Chunky, you should instead use Chunky's
 <a href="chunky/./pause.html">pause command</a>.</p>
 </blockquote>
-<h2 id="command-usage-9"><a class="header" href="#command-usage-9">Command usage</a></h2>
+<h2 id="command-usage-12"><a class="header" href="#command-usage-12">Command usage</a></h2>
 <pre><code>/chunky cancel
 </code></pre>
 <h2 id="when-to-use"><a class="header" href="#when-to-use">When to use</a></h2>
@@ -1895,7 +1956,7 @@ other words, you can only run this after starting the pregeneration with the
 If you instead would like to permanantly cancel the pregen, you should instead
 use the <a href="chunky/./cancel.html">cancel command</a>.</p>
 </blockquote>
-<h2 id="command-usage-10"><a class="header" href="#command-usage-10">Command usage</a></h2>
+<h2 id="command-usage-13"><a class="header" href="#command-usage-13">Command usage</a></h2>
 <pre><code>/chunky pause
 </code></pre>
 <h2 id="when-to-use-1"><a class="header" href="#when-to-use-1">When to use</a></h2>
@@ -1905,7 +1966,7 @@ other words, you can only run this after starting the pregeneration with the
 <div style="break-before: page; page-break-before: always;"></div><h1 id="continue-command"><a class="header" href="#continue-command">Continue command</a></h1>
 <p>Use the <code>chunky continue</code> command if you have previously <a href="chunky/./pause.html">paused</a> a
 chunky pregeneration and would like to resume, or 'unpause' it.</p>
-<h2 id="command-usage-11"><a class="header" href="#command-usage-11">Command usage</a></h2>
+<h2 id="command-usage-14"><a class="header" href="#command-usage-14">Command usage</a></h2>
 <pre><code>/chunky continue
 </code></pre>
 <h2 id="when-to-use-2"><a class="header" href="#when-to-use-2">When to use</a></h2>

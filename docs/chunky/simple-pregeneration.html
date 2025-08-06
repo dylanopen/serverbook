@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Progress command - Minecraft Server Admin Guide</title>
+        <title>Simple pregeneration - Minecraft Server Admin Guide</title>
 
 
         <!-- Custom HTML head -->
@@ -166,22 +166,43 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="checking-chunkys-progress"><a class="header" href="#checking-chunkys-progress">Checking Chunky's progress</a></h1>
-<p>You can use the <code>chunky progress</code> command to check what percentage of the world
-chunky has pregenerated so far.</p>
-<h2 id="command-usage"><a class="header" href="#command-usage">Command usage</a></h2>
-<pre><code>/chunky progress
+                        <h1 id="pregenerating-a-world"><a class="header" href="#pregenerating-a-world">Pregenerating a world</a></h1>
+<blockquote>
+<p>You must set a (fairly) small worldborder before generating the world. By
+following the steps in this page, Chunky will begin to pregenerate the world
+inside the border.</p>
+</blockquote>
+<h2 id="pregenerating-the-overworld"><a class="header" href="#pregenerating-the-overworld">Pregenerating the overworld</a></h2>
+<p>If you want to pregenerate the overworld dimension, run these commands while
+standing in the overworld:</p>
+<pre><code>/chunky world world
+/chunky worldborder
+/chunky start
+</code></pre>
+<h2 id="pregenerating-the-nether"><a class="header" href="#pregenerating-the-nether">Pregenerating the nether</a></h2>
+<p>If you want to pregenerate the nether dimension, run these commands while
+standing in the nether:</p>
+<pre><code>/chunky world world_nether
+/chunky worldborder
+/chunky start
+</code></pre>
+<h2 id="pregenerating-the-end"><a class="header" href="#pregenerating-the-end">Pregenerating the end</a></h2>
+<p>If you want to pregenerate the end dimension, run these commands while you
+are standing in the end:</p>
+<pre><code>/chunky world world_the_end
+/chunky worldborder
+/chunky start
 </code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chunky/start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chunky/installation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chunky/cancel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chunky/world.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -191,11 +212,11 @@ chunky has pregenerated so far.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chunky/start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chunky/installation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chunky/cancel.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chunky/world.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

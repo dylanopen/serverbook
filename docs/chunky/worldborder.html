@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Progress command - Minecraft Server Admin Guide</title>
+        <title>Worldborder command - Minecraft Server Admin Guide</title>
 
 
         <!-- Custom HTML head -->
@@ -166,22 +166,39 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="checking-chunkys-progress"><a class="header" href="#checking-chunkys-progress">Checking Chunky's progress</a></h1>
-<p>You can use the <code>chunky progress</code> command to check what percentage of the world
-chunky has pregenerated so far.</p>
+                        <h1 id="worldborder-command"><a class="header" href="#worldborder-command">Worldborder command</a></h1>
+<p>The <code>chunky worldborder</code> command tells Chunky to pregenerate every chunk within
+the world border. The world is set using the <a href="./world.html"><code>chunky world</code></a>
+command.</p>
+<h2 id="what-does-it-do"><a class="header" href="#what-does-it-do">What does it do?</a></h2>
+<p>Under the hood, the <code>chunky worldborder</code> command does two things:</p>
+<ul>
+<li>Sets the centre to <code>0,0</code> (you can manually set the centre with the <a href="./center.html">chunky
+center</a> command).</li>
+<li>Sets the radius to the same radius as the worldborder.</li>
+</ul>
 <h2 id="command-usage"><a class="header" href="#command-usage">Command usage</a></h2>
-<pre><code>/chunky progress
+<pre><code>/chunky worldborder
+</code></pre>
+<p>The command doesn't take any arguments.</p>
+<h2 id="changing-the-vanilla-world-border"><a class="header" href="#changing-the-vanilla-world-border">Changing the vanilla world border</a></h2>
+<p>To set the diameter of the vanilla world border, you use the <code>/worldborder</code>
+command:</p>
+<pre><code>/worldborder set &lt;diameter&gt;
+</code></pre>
+<p>For example, for a world border of diameter <code>20,000</code>, use:</p>
+<pre><code>/worldborder set 20000
 </code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chunky/start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chunky/world.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chunky/cancel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chunky/center.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -191,11 +208,11 @@ chunky has pregenerated so far.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chunky/start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chunky/world.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chunky/cancel.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chunky/center.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
